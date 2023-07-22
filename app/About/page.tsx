@@ -1,36 +1,60 @@
-"use client"
-import Image from "next/image";
+"use client";
 import { ReactMarkdown } from "react-markdown/lib/react-markdown";
-import banner from '../../public/banner.jpg'
-import { Center } from "@chakra-ui/react";
+import {  Container } from "@chakra-ui/react";
 
 export default function About() {
   const markdown = `
-  # Hello there! Welcome to my GenzDev blog.
+ 
+  # About Me: 👩‍💻
 
-  ## My name is Deepanshu Sharma, and I'm a passionate web developer and technology enthusiast. I've been working in the web development industry for [number of years] and have had the opportunity to work on various exciting projects.
-  
-  # About Me
+  ![Profile Picture](https://camo.githubusercontent.com/cae12fddd9d6982901d82580bdf321d81fb299141098ca1c2d4891870827bf17/68747470733a2f2f6d69726f2e6d656469756d2e636f6d2f6d61782f313336302f302a37513379765349765f7430696f4a2d5a2e676966)
 
-   ![Profile Picture]("https://avatars.githubusercontent.com/u/73581139?v=4") 
+  ##  Hello there! Welcome to my GenzDev blog.
+Welcome to my web development blog, where I invite you to join me on an exciting journey through the ever-evolving landscape of web technologies. I'm Deepanshu Sharma, and I am truly passionate about everything web development! 🚀
 
-   Hi there! I'm [Your Name], a passionate web developer and tech enthusiast.
+## The Spark that Ignited My Passion ✨
 
-I started my journey in the world of web development several years ago, and I've been hooked ever since. Throughout my career, I've had the opportunity to work on a variety of exciting projects and technologies, which has helped me grow and refine my skills.
+Several years ago, I stumbled upon the world of web development almost by accident. Little did I know that this serendipitous encounter would ignite a spark that would fuel my career and creativity for years to come. From my first "Hello World" script to building complex web applications, each step of the journey has been exhilarating. 💡
 
-This blog is my way of sharing my knowledge and experiences in web development with the community. I believe in the power of the web to create meaningful and interactive experiences, and I'm constantly exploring new tools and techniques to stay at the forefront of this fast-paced industry.
+## Embracing the Art and Science of Web Development 🎨🔬
 
-Whether you're a fellow developer looking to expand your skills, a beginner eager to learn the ropes, or just someone curious about the ever-evolving world of web development, this blog is for you! I'll be covering a wide range of topics, including front-end and back-end development, web design, best practices, and the latest trends in the industry.
+For me, web development is an exquisite blend of art and science. It's not just about lines of code; it's about crafting digital experiences that captivate users and leave a lasting impression. Every project I work on becomes an opportunity to explore new ideas, experiment with cutting-edge technologies, and push the boundaries of what's possible on the web. 🌐
 
-I hope you find my blog helpful and insightful. Feel free to leave comments, share your thoughts, and connect with me on social media. Let's embark on this web development journey together!
+## Learning, Growing, and Embracing Challenges 📚🌱
 
-  `
+The web development field is a dynamic universe, where innovation happens at breakneck speed. To stay relevant, I believe in continuously learning and challenging myself. Through countless hours of coding, attending tech conferences, and participating in online communities, I keep my skills sharp and my passion alive. 🚀
+
+## Building Real-World Solutions 🏢💼
+
+In my career, I've had the privilege of collaborating with diverse teams and clients to build real-world solutions. From e-commerce platforms that revolutionize online shopping to web applications that streamline business processes, I find immense satisfaction in knowing that my work impacts people's lives. 💼
+
+## Why I Started This Blog ❓📝
+
+Creating this blog is my way of giving back to the vibrant web development community that has nurtured my growth. I want to share my knowledge, insights, and experiences with fellow developers, aspiring enthusiasts, and anyone curious about the possibilities of the web. 🌐
+
+## What to Expect 🤔💡
+
+On this blog, I'll be your guide to exploring the latest front-end and back-end development techniques. Together, we'll delve into the art of web design and learn how to create beautiful user interfaces. We'll uncover best practices, discuss optimization tricks, and uncover the secrets of building lightning-fast websites.
+
+But it's not just about the technical aspects. We'll also dive into the philosophy of web development—the impact of design choices, the significance of accessibility, and the role of empathy in creating inclusive digital experiences. 🎨💻
+
+## Join Me on This Adventure! 🤝🌟
+
+I invite you to hit the subscribe button and become a part of this vibrant community of web developers. Let's share our knowledge, celebrate our successes, and tackle challenges together. Whether you're just starting or a seasoned pro, I promise you'll find something valuable here.
+
+Feel free to connect with me on social media, leave comments, and share your own experiences. Let's inspire each other and shape the future of web development together.
+
+Thank you for being here. Let's embark on this incredible journey, fueled by curiosity, creativity, and the boundless possibilities of the web! 🚀🌐
+
+  `;
   return (
     <>
-    <Center>
+      {/* <Center>
     <Image  src={banner} alt=""/>
-    </Center>
-    <ReactMarkdown className="markdown" children={markdown} />
+    </Center> */}
+      <Container px={32} maxW={"100vw"}>
+        <ReactMarkdown className="markdown" children={markdown} />
+      </Container>
     </>
   );
 }

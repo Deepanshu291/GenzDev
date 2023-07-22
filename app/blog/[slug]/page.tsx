@@ -23,8 +23,9 @@ const Blogpage = ({params}:params) => {
     const getdata = async() =>{
     //    await getPostbyid(params.slug)
     await getPostbyslug(params.slug)
-    //    await console.log(blogs[0]);
     }
+
+    
 
     return (
         <>
