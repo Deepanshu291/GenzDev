@@ -8,17 +8,26 @@ export interface blogpost {
     id:string,
     title:string,
     slug:string,
-    content:string,
+    content:string | undefined,
     imgurl:string,
     category: string,
-    colorcheame:string,
-    metadata:string,
-    date: Date,
+    colorscheame:string,
+    metadata:any,
+    intropost:boolean,
+    date: Date | undefined,
 } 
 
+export type blogprops={
+    blog:blogpost
+}
+
 export interface BlogContext{
+    blog:blogpost | undefined,
     blogs:blogpost[],
+    latestblog:blogpost | undefined,
     getPost:()=>Promise<void>,
+    getPostbyid:(id:string)=>Promise<void>,
+    getPostbyslug: (slug:string)=>Promise<void>
 }
 
 export type Props = {

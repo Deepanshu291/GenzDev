@@ -1,68 +1,36 @@
+"use client"
+import Image from "next/image";
 import { ReactMarkdown } from "react-markdown/lib/react-markdown";
-
+import banner from '../../public/banner.jpg'
+import { Center } from "@chakra-ui/react";
 
 export default function About() {
-  const markdown = `# Getting Started with React: A Beginner's Guide
+  const markdown = `
+  # Hello there! Welcome to my GenzDev blog.
 
-  ## Introduction
-  React has become one of the most popular JavaScript libraries for building user interfaces. Whether you're a seasoned developer or just starting out, learning React can open up a world of possibilities for web development. In this beginner's guide, we'll take you through the basics of React and provide you with a solid foundation to kickstart your journey into the world of React development.
+  ## My name is Deepanshu Sharma, and I'm a passionate web developer and technology enthusiast. I've been working in the web development industry for [number of years] and have had the opportunity to work on various exciting projects.
   
-  1. **What is React and Why Should You Learn It?**
-     - An overview of React and its benefits.
-     - Explanation of React's component-based architecture.
-     - Discussing the advantages of React in terms of performance and reusability.
-  
-  2. **Setting Up Your Development Environment**
-     - Instructions for installing Node.js and npm.
-     - Initializing a new React project using Create React App.
-     - Familiarizing yourself with the project structure.
-  
-  3. **Understanding React Components**
-     - Introduction to React components and their role in building UI.
-     - Functional components vs. class components.
-     - Discussing JSX syntax and its similarities to HTML.
-  
-  4. **Working with Props and State**
-     - Explaining the concept of props and how they allow data to be passed between components.
-     - Understanding state and its role in managing component data.
-     - Demonstrating how to update state using setState.
-  
-  5. **Rendering Elements and JSX**
-     - Rendering React elements to the DOM.
-     - Using JSX to create dynamic and expressive UI components.
-     - Exploring conditional rendering and rendering lists.
-  
-  6. **Handling Events in React**
-     - Adding event handlers to React components.
-     - Understanding event binding and the 'this' keyword in React.
-     - Implementing common event handling patterns.
-  
-  7. **Styling React Components**
-     - Applying CSS styles to React components.
-     - Discussing different approaches to styling, including inline styles, CSS modules, and CSS-in-JS libraries.
-     - Introducing popular styling libraries like Styled Components and Tailwind CSS.
-  
-  8. **Component Lifecycle and Hooks**
-     - Overview of the React component lifecycle and its phases.
-     - Introduction to React Hooks and their purpose.
-     - Exploring commonly used hooks like useState and useEffect.
-  
-  9. **Fetching Data in React**
-     - Making HTTP requests in React using libraries like Axios or Fetch API.
-     - Handling asynchronous data fetching with useEffect hook.
-     - Displaying fetched data in React components.
-  
-  10. **Building a Simple React Application**
-      - Putting it all together to create a small React application.
-      - Integrating multiple components, handling user input, and displaying dynamic data.
-      - Deploying the React application to a hosting platform.
-  
-  Conclusion:
-  Congratulations! You've completed our beginner's guide to React development. By understanding the fundamentals of React components, state management, event handling, and fetching data, you are well on your way to building impressive and interactive user interfaces. Remember, practice makes perfect, so keep experimenting and exploring the vast React ecosystem to enhance your skills further. Happy coding!
+  # About Me
+
+   ![Profile Picture]("https://avatars.githubusercontent.com/u/73581139?v=4") 
+
+   Hi there! I'm [Your Name], a passionate web developer and tech enthusiast.
+
+I started my journey in the world of web development several years ago, and I've been hooked ever since. Throughout my career, I've had the opportunity to work on a variety of exciting projects and technologies, which has helped me grow and refine my skills.
+
+This blog is my way of sharing my knowledge and experiences in web development with the community. I believe in the power of the web to create meaningful and interactive experiences, and I'm constantly exploring new tools and techniques to stay at the forefront of this fast-paced industry.
+
+Whether you're a fellow developer looking to expand your skills, a beginner eager to learn the ropes, or just someone curious about the ever-evolving world of web development, this blog is for you! I'll be covering a wide range of topics, including front-end and back-end development, web design, best practices, and the latest trends in the industry.
+
+I hope you find my blog helpful and insightful. Feel free to leave comments, share your thoughts, and connect with me on social media. Let's embark on this web development journey together!
+
   `
   return (
     <>
-    <ReactMarkdown children={markdown} />
+    <Center>
+    <Image  src={banner} alt=""/>
+    </Center>
+    <ReactMarkdown className="markdown" children={markdown} />
     </>
   );
 }

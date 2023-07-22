@@ -7,6 +7,7 @@ import { Inter } from 'next/font/google'
 import Navbar from './Component/Header'
 import { Metadata } from 'next'
 import { BlogProvider } from './context/BlogContext'
+import { Footer } from './Component/Footer'
 
 
 const inter = Inter({ subsets: ['latin'] })
@@ -32,6 +33,7 @@ export default function RootLayout({
         <BlogProvider>
           {children}
         </BlogProvider> 
+        <Footer/>
           </ChakraProvider>
         {/* </CacheProvider>  */}
         </body>

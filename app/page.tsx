@@ -6,6 +6,7 @@ import Search from './Component/Search';
 import { Intropost } from './Component/Intropost';
 import { Blogs } from './Component/Blogs';
 import { useEffect } from 'react';
+import { GetServerSideProps, GetStaticProps } from 'next';
 
 
 
@@ -20,9 +21,10 @@ export default function Home() {
    <Search/>
    <div className="p-[10px] ">
   
-   <Intropost/>
+   {/* <Intropost/> */}
    <Blogs/>
      </div>
    </>
   )
 }
+

@@ -26,7 +26,7 @@ export default function Navbar() {
     <>
     <div className="grid grid-cols-2 gap-10  md:grid-flow-col  px-2 py-2  xl:py-5 mx-auto  justify-between  items-center">
         {/* <Image src={logo} alt={"logo"} height={100}  /> */}
-        <Heading color={theme ==="dark"?"black":"white"}>GenzDev</Heading>
+        <Link href={"/"}> <Heading  color={theme === "dark"?"black":"white"}>GenzDev</Heading> </Link>
         <ul className="hidden md:flex gap-4  text-xl">
             <li  className='hover:font-bold text-black cursor-pointer '>
                 <Link href={"/"}>Home</Link>
