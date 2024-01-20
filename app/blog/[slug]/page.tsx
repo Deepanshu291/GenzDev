@@ -32,7 +32,7 @@ const Blogpage = ({params}:params) => {
         
 
         
-         <div className='px-6 md:px-20 lg:px-56 mt-10'>
+        <div className='px-6 md:px-20 lg:px-56 mt-10'>
         <h3 className='text-red-500 text-sm lg:text-lg'>{blog?.category} </h3>
         <h3 className='text-3xl lg:text-5xl font-bold dark:text-white'>{blog?.title} </h3>
         <div className='flex items-center mt-5'>

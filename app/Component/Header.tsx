@@ -29,7 +29,7 @@ export default function Navbar() {
         <Link href={"/"}> <Heading  color={theme === "dark"?"black":"white"}>GenzDev</Heading> </Link>
         <ul className="hidden md:flex gap-4  text-xl">
             <li  className='hover:font-bold text-black cursor-pointer '>
-                <Link href={"/"}>Home</Link>
+                <Link href={"/home"}>Home</Link>
             </li>
             <li  className='hover:font-bold cursor-pointer'>
                 <Link href={"/about"}>About</Link>

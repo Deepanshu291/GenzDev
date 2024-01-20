@@ -5,12 +5,16 @@ import { GetStaticProps } from "next";
 const client = new Client();
 const productid = process.env.NEXT_PUBLIC_PROJECT_ID
 client
-    .setEndpoint('https://cloud.appwrite.io/v1')
-    .setProject(productid || "");
+  .setEndpoint("https://cloud.appwrite.io/v1")
+  .setProject(productid || "64b81c6b883a9b275abe");
 
 const db = new Databases(client);
-const collectionId:string =process.env.NEXT_PUBLIC_DATABASE_ID || ""
-const documentId:string =process.env.NEXT_PUBLIC_COLLECTION_ID || ""
+console.log(db);
+
+const collectionId: string =
+  process.env.NEXT_PUBLIC_DATABASE_ID || "64b81ccad16470a6586b";
+const documentId: string =
+  process.env.NEXT_PUBLIC_COLLECTION_ID || "64b81ccf9a0959b4de97";
 
 
 function BlogPromise(promise:Promise<Models.DocumentList<Models.Document>>):Promise<blogpost[]> {
